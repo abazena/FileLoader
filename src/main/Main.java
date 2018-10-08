@@ -14,13 +14,13 @@ public class Main {
         String path = "src/datasets/"+fileName +".txt";
 
         String fileContent =TextLoder.load(path , Charset.defaultCharset());
-        
+
 
         String[][] finalArray = TextLoder.parse2dArray(fileContent);
 
         for (int i = 0; i < finalArray.length; ++i) {
             for(int j = 0; j < finalArray[i].length; ++j) {
-                System.out.print(" / " + finalArray[i][j]);
+                System.out.print("/" + finalArray[i][j]);
                 if(j == 2){
                     System.out.println();
                 }
