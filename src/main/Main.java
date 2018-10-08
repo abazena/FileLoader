@@ -14,7 +14,7 @@ public class Main {
         String path = "src/datasets/"+fileName +".txt";
 
         String fileContent =TextLoder.load(path , Charset.defaultCharset());
-        //System.out.println(fileContent);
+        
 
         String[][] finalArray = TextLoder.parse2dArray(fileContent);
 
